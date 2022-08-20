@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EvandroJV</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" class="nome form" id="nome" placeholder="Nome">
+        <select name="turma" class="form" id="turma">
+            <option value="0">Selecione uma turma</option>
+            <option value="254">2-54</option>
+            <option value="253">2-53</option>
+            <option value="252">2-52</option>
+            <option value="251">2-51</option>
+        </select>
+        <select class="form" name="materia" id="materia">
+            <option value="0">Selecione uma matéria</option>
+            <option value="BancoDeDados">Banco de Dados</option>
+            <option value="Programação Aplicativo">Programação Aplicativo</option>
+        </select>
+        <input type="file" id="arquivo" name="arquivo" class="arquivo form">
+        <button id="bttenviar" class="form">Enviar</button>
+    </div>
+    <div class="success" id="success">
+        <h1>Envio com sucesso</h1>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-storage-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
